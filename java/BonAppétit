@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int k = scan.nextInt();
+        int[] arr = new int[n];
+        
+        for (int i = 0; i < n; i++){
+            int a = scan.nextInt();
+            arr[i] = a;
+        }
+        
+        int paid = scan.nextInt();
+        
+        int sum = 0;
+        for (int j = 0; j<n; j++){
+           
+            if (j!=k)
+                sum = sum + arr[j];
+            }
+        
+        int topay = sum/2;
+        
+        if (topay == paid)
+            System.out.println("Bon Appetit");    
+        else
+            System.out.println(paid - topay); 
+        
+        
+        
+
+        
+        
+        
+    }
+}
